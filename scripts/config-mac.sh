@@ -2,7 +2,7 @@ echo
 echo 'Customizing MacOS configuration'
 
 # hide the dock
-defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock show-recents -bool false
 killall Dock
 
 # fast key repeat rate, requires reboot to take effect
@@ -17,10 +17,14 @@ set +e # allow dock config to fail if user has already customized
 # dock: remove standard icons, add common apps
 brew install dockutil
 dockutil --remove all
-dockutil --add /Applications/Bitwarden.app --no-restart
+dockutil --add /Applications/Calendar.app --no-restart
+dockutil --add /Applications/Notes.app --no-restart
+dockutil --add /Applications/Preview.app --no-restart
+dockutil --add /Applications/Settings.app --no-restart
+dockutil --add /Applications/Stickies.app --no-restart
+dockutil --add /Applications/zoom.us.app --no-restart
 dockutil --add /Applications/Google\ Chrome.app --no-restart
 dockutil --add /Applications/Firefox.app --no-restart
-dockutil --add /Applications/Safari.app --no-restart
 dockutil --add /Applications/iTerm.app --no-restart
 dockutil --add /Applications/Slack.app --no-restart
 dockutil --add /Applications/Visual\ Studio\ Code.app/
