@@ -19,3 +19,8 @@ git config --global alias.fixup "commit --fixup"
 git config --global alias.squash "commit --squash"
 git config --global alias.amendit "commit --amend --no-edit"
 git config --global alias.rum "rebase master@{u}"
+git config --global pull.rebase true
+git config --global --bool push.autoSetupRemote true
+git config --global user.name "John Chan"
+git config --global user.email "john@innovation.nj.gov"
+
