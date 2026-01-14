@@ -17,16 +17,16 @@ source ${MY_DIR}/scripts/applications.sh
 
 # configurations and preferences
 source ${MY_DIR}/scripts/unix.sh
-source ${MY_DIR}/scripts/config-custom-zsh.sh # comment this out if you want to configure your own zsh
 source ${MY_DIR}/scripts/git-aliases.sh
 source ${MY_DIR}/scripts/config-mac.sh
+source ${MY_DIR}/scripts/config-custom-zsh.sh
 
 # languages and tools
 source ${MY_DIR}/scripts/node.sh
 source ${MY_DIR}/scripts/ruby.sh
 source ${MY_DIR}/scripts/python.sh
-source ${MY_DIR}/scripts/postgres.sh
-source ${MY_DIR}/scripts/docker.sh
+# source ${MY_DIR}/scripts/postgres.sh
+# source ${MY_DIR}/scripts/docker.sh
 
 
 echo
@@ -38,5 +38,6 @@ echo "-----------------------------------------"
 echo
 echo "After checking the above output for any problems, start a new iTerm session to make use of all the installed tools."
 echo "Rebooting is only necessary for keyboard repeat settings to work."
+echo "Run zsh to restart the shell to apply oh-my-zsh changes"
 
 echo
