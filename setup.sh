@@ -20,6 +20,7 @@ source ${MY_DIR}/scripts/unix.sh
 source ${MY_DIR}/scripts/git-aliases.sh
 source ${MY_DIR}/scripts/config-mac.sh
 source ${MY_DIR}/scripts/config-custom-zsh.sh
+cp ${MY_DIR}/files/john-vscode /Users/johnchan/Library/Application\ Support/Code/User/settings.json
 
 # languages and tools
 source ${MY_DIR}/scripts/node.sh
