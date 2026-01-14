@@ -7,9 +7,11 @@ This project automates the process of setting up a new NJ laptop.
 Open Terminal and run the following commands:
 
 ```sh
-mkdir -p ~/workspace
-cd ~/workspace
-git clone https://github.com/aloverso/workstation-setup.git
+brew install git
+ssh-keygen -t ed25519 -C "your_email@example.com"
+# Add public SSH key to GitHub
+
+git clone https://github.com/jachan/workstation-setup.git
 cd workstation-setup
 ./setup.sh
 ```
