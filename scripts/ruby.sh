@@ -7,3 +7,6 @@ rbenv install $(rbenv install -l | grep -v - | tail -1) --skip-existing
 rbenv global $(rbenv install -l | grep -v - | tail -1)
 gem install bundler
 rbenv rehash
+
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
