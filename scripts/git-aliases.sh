@@ -23,4 +23,4 @@ git config --global pull.rebase true
 git config --global --bool push.autoSetupRemote true
 git config --global user.name "John Chan"
 git config --global user.email "john@innovation.nj.gov"
-
+git config set advice.skippedCherryPicks false
