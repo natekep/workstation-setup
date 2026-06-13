@@ -13,7 +13,9 @@ brew install --cask postman
 brew install --cask iterm2
 
 # Browsers
-brew install --cask firefox
+# brew install --cask firefox
+brew install --cask google-chrome
+
 
 # Editors
 brew install --cask visual-studio-code
