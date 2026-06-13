@@ -11,7 +11,7 @@ brew install git
 ssh-keygen -t ed25519 -C "your_email@example.com"
 # Add public SSH key to GitHub
 
-git clone https://github.com/jachan/workstation-setup.git
+git clone https://github.com/natekep/workstation-setup.git
 cd workstation-setup
 ./setup.sh
 ```
